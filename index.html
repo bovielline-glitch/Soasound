@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoaSound | Instruments de musique</title>
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="Senila.js" defer></script>
+
+    <!-- Icônes -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-music"></i>
+            </span>
+            <span>Soa<span>Sound</span></span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#boutique">Boutique</a>
+            <a href="#categories">Catégories</a>
+            <a href="#malagasy">Malagasy</a>
+            <a href="#about_us">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="searchBtn" aria-label="Rechercher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn" aria-label="Favoris">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <button class="cart-btn" id="cartBtn" aria-label="Panier">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-panel" id="searchPanel">
+        <div class="container search-container">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Rechercher un instrument..."
+                    autocomplete="off"
+                >
+
+                <button id="closeSearch">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-small-title">
+                <i class="fa-solid fa-music"></i>
+                L'univers de la musique
+            </span>
+
+            <h1>
+                Faites vibrer<br>
+                <span>votre passion.</span>
+            </h1>
+
+            <p>
+                Découvrez notre sélection d'instruments musicaux
+                malagasy et internationaux, choisis pour donner vie
+                à votre musique.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#boutique" class="btn btn-primary">
+                    Découvrir la boutique
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#malagasy" class="btn btn-outline">
+                    Instruments Malagasy
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+
+    <div class="container features-grid">
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+
+            <div>
+                <h3>Livraison</h3>
+                <p>Partout à Madagascar</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+                <h3>Achat sécurisé</h3>
+                <p>Vos achats en toute confiance</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <div>
+                <h3>Support</h3>
+                <p>Nous sommes à votre écoute</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div>
+                <h3>Qualité</h3>
+                <p>Des instruments sélectionnés</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">EXPLORER</span>
+                <h2>Choisissez votre univers</h2>
+            </div>
+
+            <p>
+                Trouvez l'instrument qui correspond
+                à votre style musical.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a href="#boutique" class="category-card">
+
+                <div class="category-image">
+                    <img src="aponga.jpg" alt="Guitares">
+                </div>
+
+                <div class="category-content">
+                    <span>01</span>
+                    <h3>Guitares</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <a href="#boutique" class="category-card">
+
+                <div class="category-image">
+                    <img src="clav2.jpg" alt="Claviers">
+                </div>
+
+                <div class="category-content">
+                    <span>02</span>
+                    <h3>Claviers</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <a href="#boutique" class="category-card">
+
+                <div class="category-image">
+                    <img src="bateri.jpg" alt="Batteries">
+                </div>
+
+                <div class="category-content">
+                    <span>03</span>
+                    <h3>Batteries</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+
+            <a href="#boutique" class="category-card">
+
+                <div class="category-image">
+                    <img src="sax.jpg" alt="Instruments à vent">
+                </div>
+
+                <div class="category-content">
+                    <span>04</span>
+                    <h3>Instruments à vent</h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOUTIQUE ================= -->
+<section class="products-section section" id="boutique">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span class="section-label">NOTRE BOUTIQUE</span>
+
+            <h2>Nos instruments populaires</h2>
+
+            <p>
+                Découvrez quelques-uns de nos instruments
+                disponibles.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid" id="productsGrid">
+
+
+            <!-- PRODUCT 1 -->
+            <article class="product-card"
+                     data-name="Kabosy Malagasy"
+                     data-category="malagasy">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Malagasy
+                    </span>
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="Kabosy-instrument-img.jpg"
+                         alt="Kabosy Malagasy">
+
+                    <div class="product-overlay">
+
+                        <button
+                            onclick="addToCart('Kabosy Malagasy', 120)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Instrument Malagasy
+                    </span>
+
+                    <h3>Kabosy Malagasy</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>120.00 $</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+            <article class="product-card"
+                     data-name="Marovany"
+                     data-category="malagasy">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Malagasy
+                    </span>
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="instrument-marovany.jpg"
+                         alt="Marovany">
+
+                    <div class="product-overlay">
+
+                        <button
+                            onclick="addToCart('Marovany', 250)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Instrument traditionnel
+                    </span>
+
+                    <h3>Marovany</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>250.00 $</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+            <article class="product-card"
+                     data-name="Guitare"
+                     data-category="guitare">
+
+                <div class="product-image">
+
+                    <span class="product-badge new">
+                        Nouveau
+                    </span>
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="tar.jpg"
+                         alt="Guitare">
+
+                    <div class="product-overlay">
+
+                        <button
+                            onclick="addToCart('Guitare', 90)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Guitare
+                    </span>
+
+                    <h3>Guitare</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>90.00 $</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+            <article class="product-card"
+                     data-name="Aponga"
+                     data-category="guitare">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="aponga.jpg"
+                         alt="Aponga">
+
+                    <div class="product-overlay">
+
+                        <button
+                            onclick="addToCart('Aponga', 180)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Instrument
+                    </span>
+
+                    <h3>Aponga</h3>
+
+                    <div class="product-bottom">
+
+                        <strong>180.00 $</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="view-all">
+            <a href="#all-products" class="btn btn-dark">
+                Voir tous les instruments
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MALAGASY ================= -->
+<section class="malagasy-section" id="malagasy">
+
+    <div class="container malagasy-container">
+
+        <div class="malagasy-image">
+
+            <img src="all.jpg" alt="Instruments Malagasy">
+
+            <div class="image-label">
+                <i class="fa-solid fa-music"></i>
+                <span>Made in Madagascar</span>
+            </div>
+
+        </div>
+
+
+        <div class="malagasy-content">
+
+            <span class="section-label">
+                NOTRE IDENTITÉ
+            </span>
+
+            <h2>
+                La musique<br>
+                <span>de Madagascar.</span>
+            </h2>
+
+            <p>
+                SoaSound met à l'honneur les instruments
+                qui font la richesse musicale de Madagascar.
+                Découvrez des instruments traditionnels
+                fabriqués avec passion et savoir-faire.
+            </p>
+
+            <p>
+                Kabosy, Marovany et bien d'autres instruments
+                vous attendent pour faire découvrir
+                les sonorités uniques de notre île.
+            </p>
+
+            <a href="#boutique" class="text-link">
+                Découvrir les instruments Malagasy
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ALL PRODUCTS ================= -->
+<section class="new-products section" id="all-products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">COLLECTION</span>
+                <h2>Plus d'instruments</h2>
+            </div>
+
+            <p>
+                Tout ce dont vous avez besoin
+                pour votre passion musicale.
+            </p>
+
+        </div>
+
+
+        <div class="products-grid">
+
+
+            <article class="product-card"
+                     data-name="Clavier"
+                     data-category="clavier">
+
+                <div class="product-image">
+
+                    <span class="product-badge new">
+                        Nouveau
+                    </span>
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="clav2.jpg" alt="Clavier">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Clavier', 800000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Clavier</span>
+                    <h3>Clavier</h3>
+
+                    <div class="product-bottom">
+                        <strong>800.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Saxophone"
+                     data-category="vent">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="sax.jpg" alt="Saxophone">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Saxophone', 300000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">
+                        Instrument à vent
+                    </span>
+
+                    <h3>Saxophone</h3>
+
+                    <div class="product-bottom">
+                        <strong>300.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Piano Classique"
+                     data-category="piano">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="pi1.jpg" alt="Piano classique">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Piano Classique', 700000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Piano</span>
+                    <h3>Piano Classique</h3>
+
+                    <div class="product-bottom">
+                        <strong>700.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Guitare Bass"
+                     data-category="guitare">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="bass.jpg" alt="Guitare Bass">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Guitare Bass', 700000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Guitare</span>
+                    <h3>Guitare Bass</h3>
+
+                    <div class="product-bottom">
+                        <strong>700.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Violon"
+                     data-category="corde">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="violon.png" alt="Violon">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Violon', 10000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">
+                        Instrument à cordes
+                    </span>
+
+                    <h3>Violon de base</h3>
+
+                    <div class="product-bottom">
+                        <strong>10.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Piano Naturel"
+                     data-category="piano">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="pi2.jpg" alt="Piano naturel">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Piano Naturel', 600000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Piano</span>
+                    <h3>Piano Naturel</h3>
+
+                    <div class="product-bottom">
+                        <strong>600.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Batterie"
+                     data-category="batterie">
+
+                <div class="product-image">
+
+                    <span class="product-badge">
+                        Populaire
+                    </span>
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="bateri.jpg" alt="Batterie">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Batterie', 650000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Batterie</span>
+                    <h3>Batterie de marque</h3>
+
+                    <div class="product-bottom">
+                        <strong>650.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Guitare Solo"
+                     data-category="guitare">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="solu.jpg" alt="Guitare Solo">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Guitare Solo', 800000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Guitare</span>
+                    <h3>Guitare Solo</h3>
+
+                    <div class="product-bottom">
+                        <strong>800.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <article class="product-card"
+                     data-name="Micro Studio"
+                     data-category="audio">
+
+                <div class="product-image">
+
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="micro.jpg" alt="Micro studio">
+
+                    <div class="product-overlay">
+                        <button onclick="addToCart('Micro Studio', 100000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">
+                        Audio
+                    </span>
+
+                    <h3>Micro Studio</h3>
+
+                    <div class="product-bottom">
+                        <strong>100.000 Ar</strong>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="about-section section" id="about_us">
+
+    <div class="container about-container">
+
+        <div class="about-content">
+
+            <span class="section-label">
+                À PROPOS DE SOASOUND
+            </span>
+
+            <h2>
+                La musique commence
+                <span>par un instrument.</span>
+            </h2>
+
+            <p>
+                SoaSound est une boutique dédiée aux passionnés
+                de musique. Nous proposons une sélection
+                d'instruments musicaux pour débutants,
+                passionnés et professionnels.
+            </p>
+
+            <p>
+                Notre objectif est de rendre les instruments
+                de musique plus accessibles tout en mettant
+                en valeur les instruments et le savoir-faire
+                Malagasy.
+            </p>
+
+            <div class="about-stats">
+
+                <div>
+                    <strong>50+</strong>
+                    <span>Instruments</span>
+                </div>
+
+                <div>
+                    <strong>100+</strong>
+                    <span>Clients</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Passion</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img src="all.jpg" alt="SoaSound instruments">
+
+            <div class="about-card">
+
+                <i class="fa-solid fa-music"></i>
+
+                <strong>SoaSound</strong>
+
+                <span>
+                    Votre passion,<br>
+                    notre inspiration.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+
+    <div class="container cta-container">
+
+        <div>
+
+            <span class="section-label">
+                PRÊT À COMMENCER ?
+            </span>
+
+            <h2>
+                Trouvez le son<br>
+                qui vous ressemble.
+            </h2>
+
+        </div>
+
+        <a href="#boutique" class="btn btn-light">
+            Explorer la boutique
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading center-heading">
+
+            <span class="section-label">CONTACT</span>
+
+            <h2>Besoin d'aide ?</h2>
+
+            <p>
+                Notre équipe est disponible pour vous accompagner.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3>Téléphone</h3>
+
+                <p>037 51 033 26</p>
+                <p>032 68 368 40</p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <h3>Email</h3>
+
+                <p>SoaSound@gmail.com</p>
+                <p>email@gmail.com</p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <h3>Ouverture</h3>
+
+                <p>09h00 — 12h00</p>
+                <p>14h00 — 19h00</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <div>
+            <span class="section-label">VOTRE PANIER</span>
+            <h2>Mon panier</h2>
+        </div>
+
+        <button id="closeCart" class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-content">
+
+        <ul id="cart-items"></ul>
+
+        <div id="empty-cart" class="empty-cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h3>Votre panier est vide</h3>
+
+            <p>
+                Ajoutez des instruments pour commencer.
+            </p>
+
+            <button id="continueShopping"
+                    class="btn btn-dark">
+                Continuer mes achats
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cart-total">
+                0 Ar
+            </strong>
+
+        </div>
+
+        <button class="btn btn-primary checkout-btn">
+            Passer la commande
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo footer-logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-music"></i>
+                </span>
+
+                <span>Soa<span>Sound</span></span>
+
+            </a>
+
+            <p>
+                Votre boutique d'instruments musicaux
+                Malagasy et internationaux.
+            </p>
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Boutique</h3>
+
+            <a href="#boutique">Tous les produits</a>
+            <a href="#categories">Catégories</a>
+            <a href="#malagasy">Instruments Malagasy</a>
+            <a href="#boutique">Nouveautés</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Informations</h3>
+
+            <a href="#about_us">À propos</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Livraison</a>
+            <a href="#">Conditions</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                037 51 033 26
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                SoaSound@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Madagascar
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 SoaSound. Tous droits réservés.
+            </p>
+
+            <p>
+                Réalisé par <span>Senila</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toast-message">
+        Produit ajouté au panier.
+    </span>
+
+</div>
+
+</body>
+</html>
