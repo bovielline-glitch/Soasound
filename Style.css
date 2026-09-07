@@ -1,11 +1,9 @@
-/* =====================================================
-   SOASOUND - STYLE.CSS
-   ===================================================== */
+
 
    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 
-   /* ================= VARIABLES ================= */
+   
    
    :root {
        --primary: #8d1f3d;
@@ -30,7 +28,7 @@
    }
    
    
-   /* ================= RESET ================= */
+   
    
    * {
        margin: 0;
@@ -87,7 +85,7 @@
    }
    
    
-   /* ================= HEADER ================= */
+   
    
    .header {
        position: fixed;
@@ -112,7 +110,7 @@
    }
    
    
-   /* LOGO */
+   
    
    .logo {
        display: flex;
@@ -146,7 +144,7 @@
    }
    
    
-   /* NAVIGATION */
+   
    
    .navbar {
        display: flex;
@@ -193,7 +191,7 @@
    }
    
    
-   /* ACTIONS */
+   
    
    .nav-actions {
        display: flex;
@@ -255,7 +253,7 @@
    }
    
    
-   /* ================= SEARCH ================= */
+   
    
    .search-panel {
        display: none;
@@ -304,7 +302,7 @@
    }
    
    
-   /* ================= HERO ================= */
+   
    
    .hero {
        position: relative;
@@ -393,7 +391,7 @@
    }
    
    
-   /* ================= BUTTONS ================= */
+   
    
    .btn {
        min-height: 52px;
@@ -452,7 +450,7 @@
    }
    
    
-   /* ================= FEATURES ================= */
+   
    
    .features {
        background: var(--dark);
@@ -511,7 +509,7 @@
    }
    
    
-   /* ================= SECTION HEADING ================= */
+   
    
    .section-heading {
        margin-bottom: 50px;
@@ -559,7 +557,7 @@
    }
    
    
-   /* ================= CATEGORIES ================= */
+   
    
    .category-grid {
        display: grid;
@@ -647,7 +645,7 @@
    }
    
    
-   /* ================= PRODUCTS ================= */
+   
    
    .products-section {
        background: var(--cream);
@@ -944,14 +942,14 @@
    }
    
    
-   /* ================= MORE PRODUCTS ================= */
+   
    
    .new-products {
        background: white;
    }
    
    
-   /* ================= ABOUT ================= */
+   
    
    .about-section {
        background: var(--cream);
@@ -1061,7 +1059,7 @@
    }
    
    
-   /* ================= CTA ================= */
+   
    
    .cta-section {
        padding: 80px 0;
@@ -1089,7 +1087,7 @@
    }
    
    
-   /* ================= CONTACT ================= */
+
    
    .contact-section {
        background: white;
@@ -1145,7 +1143,7 @@
    }
    
    
-   /* ================= CART ================= */
+   
    
    .cart-overlay {
        position: fixed;
@@ -1325,7 +1323,7 @@
    }
    
    
-   /* ================= FOOTER ================= */
+   
    
    .footer {
        background: var(--dark);
@@ -1442,7 +1440,7 @@
    }
    
    
-   /* ================= TOAST ================= */
+   
    
    .toast {
        position: fixed;
@@ -1483,9 +1481,7 @@
    }
    
    
-   /* =====================================================
-      RESPONSIVE
-      ===================================================== */
+   
    
    @media (max-width: 1100px) {
    
