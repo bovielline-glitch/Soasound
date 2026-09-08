@@ -9,18 +9,12 @@ import sqlite3
 import os
 
 
-# ==========================================
-# DATABASE PATH
-# ==========================================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DATABASE = os.path.join(BASE_DIR, "soasound.db")
 
 
-# ==========================================
-# CONNECTION
-# ==========================================
 
 def get_connection():
 
@@ -31,19 +25,12 @@ def get_connection():
     return connection
 
 
-# ==========================================
-# INITIALISATION DATABASE
-# ==========================================
-
 def init_database():
 
     connection = get_connection()
 
     cursor = connection.cursor()
 
-    # -----------------------------
-    # TABLE PRODUCTS
-    # -----------------------------
 
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS products (
@@ -71,10 +58,6 @@ def init_database():
     connection.close()
 
 
-# ==========================================
-# GET PRODUCTS
-# ==========================================
-
 def get_products():
 
     connection = get_connection()
@@ -94,9 +77,6 @@ def get_products():
     return products
 
 
-# ==========================================
-# ADD PRODUCT
-# ==========================================
 
 def add_product(
     nom,
